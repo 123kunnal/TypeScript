@@ -1,7 +1,8 @@
 // Partial makes all properties of a type optional creating a type 
 // with same properties but each marked as optional.
 interface Base{
-    id:string,
+    //can never be changed can also do Readonly<Base> to apply for all
+    readonly id:string,
     name:string,
     age:number,
     email:string,
